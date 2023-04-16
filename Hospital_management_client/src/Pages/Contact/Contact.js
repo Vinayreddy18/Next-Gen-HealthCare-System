@@ -1,18 +1,18 @@
-import { useForm, ValidationError } from "@formspree/react";
-import React from "react";
-import toast from "react-hot-toast";
-import { Link } from "react-router-dom";
-import useTitle from "../../hooks/useTitle";
+import { useForm, ValidationError } from '@formspree/react';
+import React from 'react';
+import toast from 'react-hot-toast';
+import { Link } from 'react-router-dom';
+import useTitle from '../../hooks/useTitle';
 
 // import "./Contact.css";
 const Contact = () => {
-  const [state, handleSubmit] = useForm("mgebwrqb");
-useTitle('Contact')
+  const [state, handleSubmit] = useForm('mgebwrqb');
+  useTitle('Contact');
   const handleContactMsg = (e) => {
     const form = e.target;
     handleSubmit(e);
     if (state.succeeded && state.submitting === false) {
-      toast.success("successfully send message");
+      toast.success('successfully send message');
       form.reset();
     }
   };
@@ -30,7 +30,13 @@ useTitle('Contact')
               Ask us everything and we would love to hear from you
             </p>
 
-            <form onSubmit={handleContactMsg} className="mt-12">
+            <form
+              action="guradivinay33@gmail.com"
+              method="post"
+              encType="text/plain"
+              onSubmit={handleContactMsg}
+              className="mt-12"
+            >
               <div className="-mx-2 md:items-center md:flex">
                 <div className="flex-1 px-2">
                   <label className="block mb-2 text-sm text-gray-600 ">
@@ -58,7 +64,7 @@ useTitle('Contact')
                     id="email"
                     name="email"
                     type="email"
-                    placeholder="johndoe@example.com"
+                    placeholder="user@gmail.com"
                     className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border  rounded-md border-teal-500 focus:border-teal-400 dark:focus:border-teal-400 focus:ring-teal-400 focus:outline-none focus:ring focus:ring-opacity-40"
                   />
                   <ValidationError
@@ -71,13 +77,13 @@ useTitle('Contact')
               <div className="-mx-2 md:items-center md:flex">
                 <div className="flex-1 px-2">
                   <label className="block mb-2 text-sm text-gray-600 ">
-                    Contact
+                    Subject
                   </label>
                   <input
                     id="contact"
                     name="contact"
                     type="contact"
-                    placeholder="018XXXXXXXX"
+                    placeholder="subject"
                     className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border  rounded-md   border-teal-500 focus:border-teal-400 dark:focus:border-teal-400 focus:ring-teal-400 focus:outline-none focus:ring focus:ring-opacity-40"
                   />
                   <ValidationError
@@ -95,7 +101,7 @@ useTitle('Contact')
                     id="location"
                     name="location"
                     type="location"
-                    placeholder="Bangladesh"
+                    placeholder="India"
                     className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border  rounded-md border-teal-500 focus:border-teal-400 dark:focus:border-teal-400 focus:ring-teal-400 focus:outline-none focus:ring focus:ring-opacity-40"
                   />
                   <ValidationError
@@ -123,15 +129,19 @@ useTitle('Contact')
                   errors={state.errors}
                 />
               </div>
-
-              <button
-                className="w-full px-6 py-3 mt-4 text-lg font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-teal-500 rounded-md hover:bg-teal-400 focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-50 "
-                type="submit"
-                value="submit"
-                disabled={state.submitting}
+              <form
+                action="mailto:doctor@gmail.com?subject=Health issues&body=Suffering from corona"
+                method="post"
               >
-                Get in touch
-              </button>
+                <button
+                  className="w-full px-6 py-3 mt-4 text-lg font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-teal-500 rounded-md hover:bg-teal-400 focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-50 "
+                  type="submit"
+                  value="submit"
+                  disabled={state.submitting}
+                >
+                  Get in touch
+                </button>
+              </form>
             </form>
           </div>
 
@@ -164,9 +174,7 @@ useTitle('Contact')
                   />
                 </svg>
 
-                <span className="mx-2 text-gray-700 truncate w-72 ">
-                  Dhaka,Bangladesh
-                </span>
+                <span className="mx-2 text-gray-700 truncate w-72 ">India</span>
               </p>
 
               <p className="flex items-start -mx-2">
@@ -186,7 +194,7 @@ useTitle('Contact')
                 </svg>
 
                 <span className="mx-2 text-gray-700 truncate w-72 ">
-                  01845368331
+                  +91 6262993939
                 </span>
               </p>
 
@@ -207,7 +215,7 @@ useTitle('Contact')
                 </svg>
 
                 <span className="mx-2 text-gray-700 truncate w-72 ">
-                  wcracker22@gmail.com
+                  doctor@gmail.com
                 </span>
               </p>
             </div>

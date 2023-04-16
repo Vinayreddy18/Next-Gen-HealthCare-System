@@ -1,84 +1,82 @@
+import React from 'react';
 
-import React from "react";
-
-import { Link } from "react-router-dom";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import AttachmentIcon from "@mui/icons-material/Attachment";
-import NavigateNextIcon from "@mui/icons-material/NavigateNext";
-import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
-import PrivacyTipIcon from "@mui/icons-material/PrivacyTip";
-import AddLocationIcon from "@mui/icons-material/AddLocation";
-import logo from '../../../assets/logo.png'
-
+import { Link } from 'react-router-dom';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import AttachmentIcon from '@mui/icons-material/Attachment';
+import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import PrivacyTipIcon from '@mui/icons-material/PrivacyTip';
+import AddLocationIcon from '@mui/icons-material/AddLocation';
+import logo from '../../../assets/logo.png';
 
 const Footer = () => {
   const footerInfos = [
     {
-      name: "Our Offerings",
+      name: 'Our Offerings',
       offers: [
-        "Classes and Events",
-        "COVID-19 Info",
-        "Virtual Care",
-        "Doctor Directory",
-        "Location Directory",
-        "Specialties Directory",
-        "MyBSWHealth Mobile App",
+        'Classes and Events',
+        'COVID-19 Info',
+        'Virtual Care',
+        'Doctor Directory',
+        'Location Directory',
+        'Specialties Directory',
+        'MyBSWHealth Mobile App',
       ],
     },
     {
-      name: "Tools and Resources",
+      name: 'Tools and Resources',
       offers: [
-        "Pay Your Bill",
-        "Medical Records",
-        "Insurance Accepted",
-        "Financial Assistance",
-        "Advance Directives",
-        "Surgery Pre-Registration",
-        "Contact Us",
+        'Pay Your Bill',
+        'Medical Records',
+        'Insurance Accepted',
+        'Financial Assistance',
+        'Advance Directives',
+        'Surgery Pre-Registration',
+        'Contact Us',
       ],
     },
     {
-      name: "About Us",
+      name: 'About Us',
       offers: [
-        "Mission Vision and Values",
-        "Leadership",
-        "Achievements",
-        "Community Impact",
-        "Provider Partner",
-        "Quality Alliance",
-        "Newsroom",
-        "Blog",
+        'Mission Vision and Values',
+        'Leadership',
+        'Achievements',
+        'Community Impact',
+        'Provider Partner',
+        'Quality Alliance',
+        'Newsroom',
+        'Blog',
       ],
     },
     {
-      name: "Get Involved",
-      offers: ["Volunteer", "Donate", "Give Blood"],
+      name: 'Get Involved',
+      offers: ['Volunteer', 'Donate', 'Give Blood'],
     },
     {
-      name: "Our Offerings",
+      name: 'Our Offerings',
       offers: [
-        "Classes and Events",
-        "COVID-19 Info",
-        "Virtual Care",
-        "Doctor Directory",
-        "Location Directory",
-        "Specialties Directory",
-        "MyBSWHealth Mobile App",
+        'Classes and Events',
+        'COVID-19 Info',
+        'Virtual Care',
+        'Doctor Directory',
+        'Location Directory',
+        'Specialties Directory',
+        'MyBSWHealth Mobile App',
       ],
     },
     {
-      name: "For Medical Professional",
+      name: 'For Medical Professional',
       offers: [
-        "Refer a Patient",
-        "Careers",
-        "Graduate Medical Education",
-        "Undergraduate Education",
-        "Allied Health Education",
-        "Nursing Education",
-        "Research Areas",
-        "Clinical Trials",
+        'Refer a Patient',
+        'Careers',
+        'Graduate Medical Education',
+        'Undergraduate Education',
+        'Allied Health Education',
+        'Nursing Education',
+        'Research Areas',
+        'Clinical Trials',
       ],
     },
   ];
@@ -87,7 +85,7 @@ const Footer = () => {
       footer
       className="bg-gradient-to-r from-slate-700 via-slate-600 to-slate-600 shadow-lg rounded-2 text-white"
     >
-      <div className="container p-6 mx-auto">
+      {/* <div className="container p-6 mx-auto">
         <div className="lg:flex gap-10">
           <div className="w-full text-white lg:w-1/5">
             <div className="px-6">
@@ -175,7 +173,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </footer>
   );
 };

@@ -1,14 +1,14 @@
-import React from "react";
-import "./AmbulanceService.css";
-import fb from "../../assets/About/Icons/facebook.png";
-import youtube from "../../assets/About/Icons/youtube.png";
-import insta from "../../assets/About/Icons/instagram.png";
-import line from "../../assets/About/Icons/line.png";
-import twitter from "../../assets/About/Icons/twitter.png";
-import { Link } from "react-router-dom";
-import useTitle from "../../hooks/useTitle";
+import React from 'react';
+import './AmbulanceService.css';
+import fb from '../../assets/About/Icons/facebook.png';
+import youtube from '../../assets/About/Icons/youtube.png';
+import insta from '../../assets/About/Icons/instagram.png';
+import line from '../../assets/About/Icons/line.png';
+import twitter from '../../assets/About/Icons/twitter.png';
+import { Link } from 'react-router-dom';
+import useTitle from '../../hooks/useTitle';
 const AmbulanceService = () => {
-  useTitle('Ambulance Service')
+  useTitle('Ambulance Service');
   return (
     <section>
       <div className="ambulanceServiceCover">
@@ -28,7 +28,7 @@ const AmbulanceService = () => {
           </p>
 
           <a
-            href="tel:+880 15100000"
+            href="tel:+91 6262993939"
             className="text-lg font-medium text-teal-700"
           >
             Telephone: +015500000

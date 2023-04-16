@@ -1,16 +1,16 @@
-import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
-import { IoNotifications } from "react-icons/io5";
-import { AuthContext } from "../../../contexts/AuthProvider";
+import React, { useContext, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { IoNotifications } from 'react-icons/io5';
+import { AuthContext } from '../../../contexts/AuthProvider';
 // import { ThemeContext, themes } from "../../../contexts/ThemeContext";
-import Login from "../../Register/Login/Login";
-import Modal from "../Modal";
-import Popup from "../Popup";
+import Login from '../../Register/Login/Login';
+import Modal from '../Modal';
+import Popup from '../Popup';
 // import "./navbar.css";
 
-import logo from "../../../assets/logo.png";
-import SignUp from "../../Register/SignUp/SignUp";
-import "./Header.css";
+import logo from '../../../assets/logo.png';
+import SignUp from '../../Register/SignUp/SignUp';
+import './Header.css';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -68,11 +68,11 @@ const Header = () => {
             {user?.uid ? (
               <li className=" text-gray-50">
                 <Link to="/noticeShow">
-                  <IoNotifications></IoNotifications>{" "}
+                  <IoNotifications></IoNotifications>{' '}
                 </Link>
               </li>
             ) : (
-              ""
+              ''
             )}
 
             <div>
@@ -83,13 +83,12 @@ const Header = () => {
                     className="flex items-center px-4 py-2 text-white rounded-lg group "
                   >
                     {user?.uid ? (
-                      <img 
-                      className="w-10 h-10 rounded-full object-cover"
+                      <img
+                        className="w-10 h-10 rounded-full object-cover"
                         src="https://i.pinimg.com/474x/ec/7f/95/ec7f9575d98970b8ea32beca3e802ea3.jpg"
                         alt=""
                       />
                     ) : (
-                     
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="w-5 h-5 "
@@ -273,8 +272,8 @@ const Header = () => {
                             <details className="group [&_summary::-webkit-details-marker]:hidden">
                               <summary className="flex items-center px-4 py-2  rounded-lg cursor-pointer hover:bg-gray-100 hover:text-gray-700">
                                 <span className="text-sm font-medium">
-                                  {" "}
-                                  Patient Services{" "}
+                                  {' '}
+                                  Patient Services{' '}
                                 </span>
 
                                 <span className="ml-auto transition duration-300 shrink-0 group-open:-rotate-180">
@@ -324,8 +323,8 @@ const Header = () => {
                             <details className="group [&_summary::-webkit-details-marker]:hidden">
                               <summary className="flex items-center px-4 py-2  rounded-lg cursor-pointer hover:bg-gray-100 hover:text-gray-700">
                                 <span className="text-sm font-medium">
-                                  {" "}
-                                  Medical Travel{" "}
+                                  {' '}
+                                  Medical Travel{' '}
                                 </span>
 
                                 <span className="ml-auto transition duration-300 shrink-0 group-open:-rotate-180">
@@ -400,15 +399,15 @@ const Header = () => {
                                   Insurance Good Vibes
                                 </Link>
                                 <Link className="block px-4 py-2 text-sm font-medium  rounded-lg hover:bg-gray-100 hover:text-gray-700">
-                                  Insurance Packages
+                                  Insurance Packa
                                 </Link>
                               </nav>
                             </details>
                             <details className="group [&_summary::-webkit-details-marker]:hidden">
                               <summary className="flex items-center px-4 py-2  rounded-lg cursor-pointer hover:bg-gray-100 hover:text-gray-700">
                                 <span className="text-sm font-medium">
-                                  {" "}
-                                  Contact Us{" "}
+                                  {' '}
+                                  Contact Us{' '}
                                 </span>
 
                                 <span className="ml-auto transition duration-300 shrink-0 group-open:-rotate-180">
@@ -452,10 +451,10 @@ const Header = () => {
                             </details>
 
                             <a
-                              href="tel:+880 15100000"
+                              href="tel:+91 6262993939"
                               className="block px-4 py-2 text-sm font-medium  rounded-lg hover:bg-gray-100 hover:text-gray-700"
                             >
-                              +880 15100000
+                              +91 6262993939
                             </a>
                           </div>
                           <div className="">
@@ -478,7 +477,10 @@ const Header = () => {
                             >
                               Blogs
                             </Link>
-                            <Link TO="/bloodDonar" className="block px-4 py-2 text-sm font-medium  rounded-lg hover:bg-gray-100 hover:text-gray-700">
+                            <Link
+                              TO="/bloodDonar"
+                              className="block px-4 py-2 text-sm font-medium  rounded-lg hover:bg-gray-100 hover:text-gray-700"
+                            >
                               Blood Donar
                             </Link>
                             <Link className="block px-4 py-2 text-sm font-medium  rounded-lg hover:bg-gray-100 hover:text-gray-700">
@@ -505,8 +507,8 @@ const Header = () => {
                 <details className="group [&_summary::-webkit-details-marker]:hidden">
                   <summary className="flex items-center px-4 py-2  rounded-lg cursor-pointer hover:bg-gray-100 hover:text-gray-700">
                     <span className="text-sm font-medium">
-                      {" "}
-                      <Link>About Us</Link>{" "}
+                      {' '}
+                      <Link>About Us</Link>{' '}
                     </span>
 
                     <span className="ml-auto transition duration-300 shrink-0 group-open:-rotate-180">
@@ -547,8 +549,8 @@ const Header = () => {
                 <details className="group [&_summary::-webkit-details-marker]:hidden">
                   <summary className="flex items-center px-4 py-2  rounded-lg cursor-pointer hover:bg-gray-100 hover:text-gray-700">
                     <span className="text-sm font-medium">
-                      {" "}
-                      Patient Services{" "}
+                      {' '}
+                      Patient Services{' '}
                     </span>
 
                     <span className="ml-auto transition duration-300 shrink-0 group-open:-rotate-180">
@@ -598,8 +600,8 @@ const Header = () => {
                 <details className="group [&_summary::-webkit-details-marker]:hidden">
                   <summary className="flex items-center px-4 py-2  rounded-lg cursor-pointer hover:bg-gray-100 hover:text-gray-700">
                     <span className="text-sm font-medium">
-                      {" "}
-                      Medical Travel{" "}
+                      {' '}
+                      Medical Travel{' '}
                     </span>
 
                     <span className="ml-auto transition duration-300 shrink-0 group-open:-rotate-180">
@@ -639,7 +641,7 @@ const Header = () => {
                 </details>
                 <details className="group [&_summary::-webkit-details-marker]:hidden">
                   <summary className="flex items-center px-4 py-2  rounded-lg cursor-pointer hover:bg-gray-100 hover:text-gray-700">
-                    <span className="text-sm font-medium"> Insurance </span>
+                    <span className="text-sm font-medium"> Features </span>
 
                     <span className="ml-auto transition duration-300 shrink-0 group-open:-rotate-180">
                       <svg
@@ -661,19 +663,33 @@ const Header = () => {
                     aria-label="Account Nav"
                     className="flex flex-col mt-2 ml-8 space-y-1"
                   >
-                    <Link
-                      to="/acceptinsurance"
+                    {/* <Link
+                      to="https://isabdch.github.io/health-app/#/"
                       className="block px-4 py-2 text-sm font-medium  rounded-lg hover:bg-gray-100 hover:text-gray-700"
                     >
-                      Insurance We Accept
-                    </Link>
+                     BMI Calculator
+                    </Link> */}
+                    <a
+                      href="https://isabdch.github.io/health-app/#/"
+                      className="block px-4 py-2 text-sm font-medium rounded-lg hover:bg-gray-100 hover:text-gray-700"
+                    >
+                      BMI Calculator
+                    </a>
 
-                    <Link className="block px-4 py-2 text-sm font-medium  rounded-lg hover:bg-gray-100 hover:text-gray-700">
-                      Insurance Good Vibes
-                    </Link>
-                    <Link className="block px-4 py-2 text-sm font-medium  rounded-lg hover:bg-gray-100 hover:text-gray-700">
-                      Insurance Packages
-                    </Link>
+                    {/* <Link className="block px-4 py-2 text-sm font-medium  rounded-lg hover:bg-gray-100 hover:text-gray-700">
+                      Yogasanas
+                    </Link> */}
+
+                    <a
+                      href="https://advanced-health-care.web.app/yogaAasans"
+                      className="block px-4 py-2 text-sm font-medium rounded-lg hover:bg-gray-100 hover:text-gray-700"
+                    >
+                      Yogasanas
+                    </a>
+
+                    {/* <Link className="block px-4 py-2 text-sm font-medium  rounded-lg hover:bg-gray-100 hover:text-gray-700">
+                      Insurance Packag
+                    </Link> */}
                   </nav>
                 </details>
                 <details className="group [&_summary::-webkit-details-marker]:hidden">
@@ -723,10 +739,10 @@ const Header = () => {
                 </details>
 
                 <a
-                  href="tel:+880 15100000"
+                  href="tel:+91 6262993939"
                   className="block px-4 py-2 text-sm font-medium  rounded-lg hover:bg-gray-100 hover:text-gray-700"
                 >
-                  +880 15100000
+                  +91 6262993939
                 </a>
               </div>
               <hr />
@@ -750,10 +766,16 @@ const Header = () => {
                 >
                   Blogs
                 </Link>
-                <Link to="bloodDonar" className="block px-4 py-2 text-sm font-medium  rounded-lg hover:bg-gray-100 hover:text-gray-700">
+                <Link
+                  to="bloodDonar"
+                  className="block px-4 py-2 text-sm font-medium  rounded-lg hover:bg-gray-100 hover:text-gray-700"
+                >
                   Blood Donar
                 </Link>
-                <Link className="block px-4 py-2 text-sm font-medium  rounded-lg hover:bg-gray-100 hover:text-gray-700" to='/chat'>
+                <Link
+                  className="block px-4 py-2 text-sm font-medium  rounded-lg hover:bg-gray-100 hover:text-gray-700"
+                  to="/chat"
+                >
                   Chat
                 </Link>
                 {user?.uid && (
